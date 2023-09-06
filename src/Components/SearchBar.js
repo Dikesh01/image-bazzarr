@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-function Home({setImages}) {
+function SearchBar({setImages}) {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function Home({setImages}) {
   return (
     <div>
       <div className="headingClass">
-        <h1 style={{ color: "rgb(106, 106, 128)",marginBottom:"20px" }}>Image Bazzar...</h1>
+        <h1 style={{ color: "rgb(106, 106, 128)",marginBottom:"20px" ,fontFamily: "'Kalam', cursive" }}>Image Bazzar...</h1>
         <input
           type="text"
           placeholder="Search here..."
@@ -41,4 +41,4 @@ function Home({setImages}) {
   );
 }
 
-export default Home;
+export default SearchBar;

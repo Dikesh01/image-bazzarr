@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Kalam', cursive;
 }
 body{
   background-color: rgb(22, 22, 46);
@@ -53,5 +56,13 @@ body{
   scale: 1.8;
   border: 2px solid rgb(233, 241, 114);
   border-radius:0;
+}
+
+/* making page responsive */
+
+@media(max-width: 625px){
+  .headingClass > input{
+    width: 170px;
+  }
 }
 
